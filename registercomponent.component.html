@@ -1,0 +1,60 @@
+<p>
+  registercomponent works!
+  
+</p>
+<h1>Register Page!!!!</h1>
+<div align="center">
+ 
+<div class="form-group">
+<!-- <label for="EmailId">EmailId:</label> 
+<input type="email" class="form-control" name="emailId" required> -->
+EmailId:<input type="email" name="emailId" #emailId>
+</div><br>
+<div class="form-group">
+<!-- <label for="fullName">FullName:</label>
+<input type="text" class="form-control" name="fullName" required> -->
+fullName:<input type="text" name="fullName" #fullName>
+</div><br>
+<div class="form-group">
+<!-- <label for="fullName">Password:</label>
+<input type="password" class="form-control" name="password" required> -->
+mobileNumber:<input type="text" name="mobileNumber" #mobileNumber>
+</div><br>
+<div class="form-group">            
+<!-- <label for="fullName">Confirm_Password:</label>
+<input type="password" class="form-control" name="Confirmpassword" required> -->
+password:<input type="password" name="password" #password>
+</div><br>     
+<div class="form-group">
+<!-- <label for="fullName">MobileNumber:</label>
+<input type="text" class="form-control" name="mobileNumber" required> -->
+
+Confirm_Password:<input type="password" name="confirmpassword" #confirmpassword></div><br>
+<div class="form-group">
+<!-- <label for="fullName">Address:</label>
+<input type="text" class="form-control" name="address" required> -->
+</div><br>        
+<div class="form-group">
+  Address:<input type="text" name="address" #address>
+<!-- <label for="fullName">City:</label>
+<input type="text" class="form-control" name="city" required> -->
+</div><br>
+<div class="form-group">
+<!-- <label for="fullName">Zipcode:</label>
+<input type="text" class="form-control" name="zipcode" required> -->
+City:<input type="text" name="city" required #city >
+</div><br>
+<div class="form-group">
+<!-- <label for="fullName">Country:</label>
+<input type="text" class="form-control" name="country" required> -->
+ZipCode:<input type="text" name="zipcode" required #zipcode>
+</div><br>
+<div class="form-group">
+  Country:<input type="text" name="country" required #country>
+</div><br>
+<!-- <button type="submit" class="btn btn-success">Register</button> -->
+
+<button (click)="registerData(emailId.value,fullName.value,mobileNumber.value,password.value,confirmpassword.value,address.value,city.value,zipcode.value,country.value)">Click here to register</button>
+<br/><br/>
+</div>
+
